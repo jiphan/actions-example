@@ -3,7 +3,7 @@ name: name1
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0/5 * * * *"
+    - cron: "0/10 * * * *"
     
 jobs:
   job1:
@@ -11,4 +11,4 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-python@v4 
-      - run: python main.py > ./output
+      - run: python main.py > output
